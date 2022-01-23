@@ -20,6 +20,10 @@ header {
     align-items: center;
 }
 
+.header-nav {
+    padding-right: 6.39vw;
+}
+
 header > .header-brand > img {
     width: 100%;
 }
@@ -31,10 +35,18 @@ header > .header-nav > a {
     margin: 0 1vw 0 1vw;
 }
 
-main {
+main:not(#blog) {
     display: flex;
     flex-direction: column;
     background-image: url("../images/bg.png");
+    background-size: auto;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+main#blog {
+    display: flex;
+    flex-direction: column;
     background-size: auto;
     height: 100vh;
     justify-content: space-between;
@@ -62,6 +74,14 @@ main > .content > .content-bottom {
     justify-content: right;
 }
 
+#spanblog {
+    margin-right: 1vw;
+}
+
+#margin-left {
+    margin-left: 2vw;
+}
+
 .cb-item > a {
     text-decoration: none;
     color: var(--primaryColor);
@@ -85,7 +105,7 @@ main > .content > .content-bottom > a:nth-child(2) {
     justify-content: end;
 }
 
-section {
+section:not(#blog) {
     height: 80vh;
 }
 
@@ -166,6 +186,86 @@ section {
 
 #sc4 {
     background-image: url(../images/sirket-bg.png);
+}
+
+#blog {
+    height: 80vh;
+}
+
+.blog-headline {
+    padding-left: 10vw;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+#bg-margin-top {
+    padding-top: 8vh;
+}
+
+.blog-headline > a {
+    text-decoration: none;
+    margin-left: 1vw;
+    font-size: 0.8rem;
+    padding-bottom: 0.2vh;
+}
+
+.blog-headline > a:hover {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.blog-headline > h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: normal;
+}
+
+.blog-area {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    width: 20vw;
+}
+
+.blog-card > img {
+    height: 36vh;
+    margin-bottom: 1vh;
+}
+
+.blog-bottom > h6 {
+    opacity: 0.7;
+    margin-top: 0.4vh;
+    padding-bottom: 0.1vh;
+    font-size: 0.7rem;
+}
+
+.blog-bottom > h3 {
+    margin-bottom: 0.3vh;
+}
+
+.blog-bottom > p {
+    padding-top: 0.4vh;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+#blog-date {
+    display: inline-block;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.6vh;
 }
 
 #me {
