@@ -35,13 +35,17 @@ header > .header-nav > a {
     margin: 0 1vw 0 1vw;
 }
 
-main:not(#blog) {
+main:not(#blog, #blog-article){
     display: flex;
     flex-direction: column;
     background-image: url("../images/bg.png");
     background-size: auto;
-    height: 100vh;
     justify-content: space-between;
+    height: 100vh;
+}
+
+main#blog-article {
+    height: 140vh;
 }
 
 main#blog {
@@ -231,6 +235,10 @@ section:not(#blog) {
     flex-wrap: wrap;
 }
 
+.blog-card > a {
+    text-decoration: none;
+}
+
 .blog-card {
     display: flex;
     flex-direction: column;
@@ -239,8 +247,9 @@ section:not(#blog) {
     width: 20vw;
 }
 
-.blog-card > img {
+.blog-card > a > img {
     height: 36vh;
+    width: 19vw;
     margin-bottom: 1vh;
 }
 
@@ -327,6 +336,42 @@ section:not(#blog) {
 #email {
     display: inline-block;
     margin-bottom: 5vh;
+}
+
+article#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article#blog > img {
+    padding-top: 4vh;
+    width: 64vw;
+    height: 60vh;
+}
+
+.blog-detail {
+    width: 64vw;
+}
+
+.blog-detail > h5 {
+    padding-top: 3vh;
+}
+
+.blog-detail > h2 {
+    font-size: 2rem;
+}
+.blog-detail > p {
+    margin-top: 0.4vh;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.blog-detail > span {
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-top: 0.4vh;
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 414px) {
