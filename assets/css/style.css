@@ -6,9 +6,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: var(--primaryColor);
 }
 body {
     width: 100%;
+    background-color: #232323;
 }
 header {
     padding: 5vh 3vw 3vh 3vw;
@@ -81,6 +83,150 @@ main > .content > .content-bottom > a:nth-child(2) {
 .cb-item {
     display: flex;
     justify-content: end;
+}
+
+section {
+    height: 80vh;
+}
+
+#aboutus {
+    background-image: url("../images/aboutus-bg.png");
+
+}
+
+#aboutus > h2 {
+    padding-left: 10vw;
+    padding-top: 16vh;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: normal;
+}
+
+.aboutus-content {
+    padding-top: 6vh;
+    padding-left: 10vw;
+}
+
+.aboutus-item > h3 {
+    font-size: 1.8rem;
+    margin-bottom: 3vh;
+}
+
+.aboutus-item > p {
+    font-size: 1rem;
+}
+
+#aui0, #aui1 {
+    margin-bottom: 4vh;
+}
+
+#solutions > h2 {
+    padding-left: 10vw;
+    padding-top: 8vh;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: normal;
+}
+
+.solution-area{
+    padding-top: 6vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.solution-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    height: 38vh;
+    width: 13vw;
+    font-size: 1rem;
+}
+
+#sc0 {
+    background-image: url(../images/bisilim-bg.png);
+}
+
+#sc1 {
+    background-image: url(../images/sozlesme-bg.png);
+}
+
+#sc2 {
+    background-image: url(../images/lojistik-bg.png);
+}
+
+#sc3 {
+    background-image: url(../images/sigorta-bg.png);
+}
+
+#sc4 {
+    background-image: url(../images/sirket-bg.png);
+}
+
+#me {
+    background-image: url(../images/me-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.me {
+    max-width: 400px;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+#me > .me > h2 {
+    padding-bottom: 3vh;
+    padding-top: 12vh;
+}
+
+#me > p {
+    max-width: 400px;
+    font-size: 1.2rem;
+}
+
+#contact > h2 {
+    padding-left: 10vw;
+    padding-top: 16vh;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: normal;
+}
+
+.contact-area {
+    padding-left: 10vw;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.right-item > 
+
+.right {
+    flex: 1;
+}
+
+.right-item > a {
+    text-decoration: none;
+}
+
+#email {
+    display: inline-block;
+    margin-bottom: 5vh;
 }
 
 @media only screen and (max-width: 414px) {
